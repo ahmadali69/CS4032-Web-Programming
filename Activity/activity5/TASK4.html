@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Table Row with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .remove-button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ahmad Ali</td>
+                <td>ali@google.com</td>
+                <td><button class="remove-button">Remove</button></td>
+            </tr>
+            <tr>
+                <td>Usman</td>
+                <td>Usman@yahoo.com</td>
+                <td><button class="remove-button">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- jQuery Code -->
+    <script>
+        $(document).ready(function () {
+            // Remove button click event
+            $('#dataTable').on('click', '.remove-button', function () {
+                $(this).closest('tr').remove();
+            });
+        });
+    </script>
+
+</body>
+</html>

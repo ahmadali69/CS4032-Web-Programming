@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Class and ID of Clicked Element</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="container" class="main-container">
+        <h1 id="heading" class="title">Welcome to jQuery</h1>
+        <p id="paragraph" class="content">jQuery is a fast, small, and feature-rich JavaScript library.</p>
+        <button id="button" class="btn">Click me</button>
+    </div>
+
+    <!-- jQuery Code -->
+    <script>
+        $(document).ready(function () {
+            // Click event handler for all elements
+            $('#container').on('click', '*', function () {
+                // Find and display class and ID of clicked element
+                var elementClass = $(this).attr('class');
+                var elementID = $(this).attr('id');
+                alert('Clicked Element Class: ' + elementClass + '\nClicked Element ID: ' + elementID);
+            });
+        });
+    </script>
+
+</body>
+</html>
