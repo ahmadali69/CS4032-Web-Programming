@@ -1,0 +1,51 @@
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20;
+    background-color: #fbf6f6;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  
+  #clock {
+    display: flex;
+  }
+  #clock1 {
+    display: flex;
+  }
+  
+  .unit {
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+    color: #fbf6f6;
+    font-style: italic;
+  }
+  
+  #hours {
+    font-size: 100px; 
+    
+    background-color: #00bcd4; 
+  }
+  #minutes {
+    font-size: 100px;
+     background-color: #8bc34a;
+     }
+  #seconds { 
+    font-size: 100px;
+    background-color: #ff5722; 
+  }
+  #period {
+    font-size: 100px; 
+    background-color: #cddc39; 
+  }
+  #hours1 { background-color: #00bcd4; }
+  #minutes1 { background-color: #8bc34a; }
+  #seconds1 { background-color: #ff5722; }
+  #period1 { background-color: #cddc39; }
+  
+  
